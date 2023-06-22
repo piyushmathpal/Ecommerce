@@ -1,0 +1,18 @@
+
+  
+.sidemenu{
+    width: 250px;
+    height:100%;
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+}
+@media only screen and (max-width:600px) {
+    /* For mobile phones: */
+    .sidemenu{
+        width: 90vw;
+        
+        
+    }
+    }
