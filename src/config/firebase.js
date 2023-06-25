@@ -8,16 +8,17 @@ import { getFirestore, query,getDocs,collection,where,addDoc} from "firebase/fir
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDuPMui82IMnfw2EbLwRutd2HPhf4fTym4",
-  authDomain: "ecommerce-648c6.firebaseapp.com",
-  projectId: "ecommerce-648c6",
-  storageBucket: "ecommerce-648c6.appspot.com",
-  messagingSenderId: "803766163424",
-  appId: "1:803766163424:web:47c2bf3c786ea1edc5bd85",
-  measurementId: "G-HH9VSFV98Q"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain:process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID ,
+  storageBucket:process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId:process.env.REACT_APP_MESSAGINGSENDERID,
+  appId:process.env.REACT_APP_APPID,
+  measurementId:process.env.REACT_APP_MEASURMENTID
 };
 
 // Initialize Firebase

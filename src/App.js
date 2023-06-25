@@ -13,7 +13,10 @@ import ItemPage from "./pages/ItemPage";
 import LoginPage from "./pages/LoginPage";
 import PhoneNumber from "./pages/PhoneNumber";
 const App = () => {
+  console.log(process.env.apiKey)
+  console.log(1);
   return (
+
     <>
       <Nav_bar></Nav_bar>
       <Routes>

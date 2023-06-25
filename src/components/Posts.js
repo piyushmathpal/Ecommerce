@@ -44,10 +44,10 @@ const Posts = () => {
 
   return (
     <>
-    <div>
+    
 
-    {load&&<Spinner1/>}
-    {!load &&<center><div className='d-flex flex-wrap justify-content-around d-inline-block'>
+    {load && <div style={{width:"100%"}}><Spinner1/></div>}
+    {!load  &&<center><div className='d-flex flex-wrap justify-content-around d-inline-block'>
     
     
 
@@ -57,7 +57,7 @@ const Posts = () => {
     </div>
     </center>
     }
-    </div>
+   
    
     
     </>
